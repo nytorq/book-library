@@ -1,0 +1,28 @@
+html {
+    background: black;
+    color: white;
+}
+
+#library {
+    border: 1px solid white;
+    height: 500px;
+    margin: 20px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    background-color: #151221;
+    border: 1px solid #fff;
+    padding: 10%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
