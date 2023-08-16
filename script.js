@@ -1,26 +1,40 @@
-let myLibrary = [
-    {
-        title: "The Hobbit",
-        author: "JRR Tolkein",
-        pages: 573,
-        read: false
-    },
-    {
-        title: "Dune",
-        author: "Frank Herbert",
-        pages: 648,
-        read: true
+const Book = class {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
     }
-];
+}
+
+const book1 = new Book("The Hobbit", "JRR Tolkein", 573, false);
+const book2 = new Book("Dune", "Frank Herbert", 648, true);
+let myLibrary = [];
+myLibrary.push(book1, book2)
+
+// let myLibrary = [
+//     {
+//         title: "The Hobbit",
+//         author: "JRR Tolkein",
+//         pages: 573,
+//         read: false
+//     },
+//     {
+//         title: "Dune",
+//         author: "Frank Herbert",
+//         pages: 648,
+//         read: true
+//     }
+// ];
 
 const library = document.getElementById('library');
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-}
+// function Book(title, author, pages, read) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+//     this.read = read;
+// }
 
 function addBookToLibrary(title, author, pages, read) {
     event.preventDefault();
